@@ -6,6 +6,7 @@ class Vector:
     @classmethod
     def zero(cls, dim):
         """返回一个dim维的零向量"""
+        # 对于类的方法，第一个参数是当前类
         return cls([0] * dim)
 
     def __add__(self, another):

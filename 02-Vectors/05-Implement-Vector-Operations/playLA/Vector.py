@@ -4,7 +4,8 @@ class Vector:
         self._values = list(lst)
 
     def __add__(self, another):
-        """向量加法，返回结果向量"""
+        """向量加法，返回结果向量；重载加号运算"""
+        # 确保两个向量维度相等
         assert len(self) == len(another), \
             "Error in adding. Length of vectors must be same."
 
